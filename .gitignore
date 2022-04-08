@@ -1,0 +1,4 @@
+node_modules
+credentials.ts
+dist
+**/*.DS_STORE
