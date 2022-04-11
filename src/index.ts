@@ -24,7 +24,7 @@ async function main2() {
 
     console.log('Sending post request...');
     try {
-        const postResponse = await fetch(postUrl, postOpts(new Readable().wrap(zipFile.outputStream)));
+        const postResponse = await fetch(postUrl, postOpts(zipFile.outputStream as Readable));
         logResponse('POST response: ', postResponse);
     } catch (e) {
         console.log('POST request failed.');
